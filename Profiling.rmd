@@ -556,7 +556,7 @@ If you've used R for any length of time, you've probably heard the admonishment 
 * The loops in a vectorised function are written in C instead of R. Loops in C 
   are much faster because they have much less overhead.
 
-[Functionals](#functionals) stressed the importance of vectorised code as a higher level abstraction. Vectorisation is also important for writing fast R code. This doesn't mean simply using `apply()` or `lapply()`, or even `Vectorise()`. Those functions improve the interface of a function, but don't fundamentally change performance. Using vectorisation for performance means finding the existing R function that is implemented in C and most closely applies to your problem. 
+[Functionals](#functionals) stressed the importance of vectorised code as a higher level abstraction. Vectorisation is also important for writing fast R code. This doesn't mean simply using `apply()` or `lapply()`, or even `Vectorize()`. Those functions improve the interface of a function, but don't fundamentally change performance. Using vectorisation for performance means finding the existing R function that is implemented in C and most closely applies to your problem. 
 
 Vectorised functions that apply to many common performance bottlenecks include:
 
